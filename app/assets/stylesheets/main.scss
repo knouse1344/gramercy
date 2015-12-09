@@ -1,0 +1,253 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#project {
+	padding-top: 10em;
+	text-align: center;
+}
+
+#project a {
+	padding: 1em;
+}
+
+
+
+body {
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+.card {
+	width: 800px;
+	height: 600px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.holidays {
+	background: pink;
+	border: 5px solid red;
+}
+.christmas {
+	background: lightsteelblue;
+	border: 5px solid darkgreen;
+}
+.hanukkah {
+	background: lightsteelblue;
+	border: 5px solid darkgreen;
+}
+
+
+
+
+/*  Holidays Card   */
+
+.holidays h2 {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.ornament-one {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	background: maroon;
+	border-radius: 125px;
+}
+
+.rope-one {
+	width: 10px;
+	height: 400px;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 220px;
+}
+
+.ornament-two {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 290px;
+	left: 270px;
+	background: crimson;
+	border-radius: 75px;
+}
+
+.rope-two {
+	width: 10px;
+	height: 400px;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 340px;
+}
+
+.ornament-three {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 180px;
+	left: 360px;
+	background: forestgreen;
+	border-radius: 100px;
+}
+
+.rope-three {
+	width: 10px;
+	height: 350px;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 450px;
+}
+
+
+
+
+/*  TREE CARD  */
+
+.christmas h2 {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.tree {
+	position: absolute;
+	top: 80px;
+	left: 125px;
+	width: 0; 
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 400px solid green;
+}
+
+.light-one {
+ 	position: absolute;
+    left: 240px;
+    top: 210px;
+ 	width: 25px;
+ 	height: 25px;
+ 	background: white;
+ 	border-radius: 13px;
+}
+.light-two {
+ 	position: absolute;
+    left: 300px;
+    top: 320px;
+ 	width: 25px;
+ 	height: 25px;
+ 	background: white;
+ 	border-radius: 13px;
+}
+.light-three {
+ 	position: absolute;
+    left: 240px;
+    top: 420px;
+ 	width: 25px;
+ 	height: 25px;
+ 	background: white;
+ 	border-radius: 13px;
+}
+
+.stump {
+	background: saddlebrown;
+	width: 75px;
+	height: 100px;
+	position: absolute;
+	left: 230px;
+	bottom: 50px;
+}
+
+.snow {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 75px;
+	width: 100%;
+	background: white;
+}
+
+
+
+
+
+
+/*  Hanukkah Card   */
+
+
+.hanukkah h2 {
+	position: absolute;
+	top: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.base {
+	width: 565px;
+	height: 50px;
+	position: absolute;
+	left: 100px;
+	bottom: 100px;
+	background: goldenrod;
+}
+
+.stand {
+	width: 80px;
+	height: 100px;
+	background: goldenrod;
+	left: 350px;
+	bottom: 0;
+	position: absolute;
+}
+
+.candle {
+	width: 40px;
+	height: 300px;
+	position: absolute;
+	bottom: 150px;
+	border-top: 10px solid red;
+	background: goldenrod;
+}
+
+.candle.one {
+	left: 100px;
+}
+.candle.two {
+	left: 175px;
+}
+.candle.three {
+	left: 250px;
+}
+.candle.four {
+	left: 325px;
+}
+.candle.five {
+	left: 400px;
+}
+.candle.six {
+	left: 475px;
+}
+.candle.seven {
+	left: 550px;
+}
+.candle.eight {
+	left: 625px;
+}
+
+
+

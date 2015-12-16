@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   match '/jaden' => 'users#show', :defaults => { :id => '6' }, via: 'get'
   match '/vivian' => 'users#show', :defaults => { :id => '7' }, via: 'get'
   match '/maggie' => 'users#show', :defaults => { :id => '8' }, via: 'get'
-  match '/zoey' => 'users#show', :defaults => { :id => '9' }, via: 'get'
+  match '/zoie' => 'users#show', :defaults => { :id => '9' }, via: 'get'
   match '/bella' => 'users#show', :defaults => { :id => '10' }, via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.

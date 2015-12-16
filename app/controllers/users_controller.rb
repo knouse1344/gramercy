@@ -32,6 +32,10 @@ class UsersController < ApplicationController
     @newchristmas.lightone = "white"
     @newchristmas.lighttwo = "white"
     @newchristmas.lightthree = "white"
+    @newchristmas.snow = "white"
+    @newchristmas.background = "steelblue"
+    @newchristmas.border = "grey"
+    @newchristmas.title = "Merry Christmas!"
     @newchristmas.save
     redirect_to @user, notice: "Thanks!"
   end

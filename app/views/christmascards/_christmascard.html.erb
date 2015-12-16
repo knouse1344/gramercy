@@ -6,26 +6,26 @@
 		</div>
 	</div>
 	<div class="card christmas">
-		<h2>Merry Christmas!</h2>
+		<h2><%= christmascard.title %></h2>
 		<div class="stump"></div>
 		<div class="tree" style="border-bottom: 400px solid <%= christmascard.tree %>;"></div>
 		<div class="light-one" style="background: <%= christmascard.lightone %>;"></div>
 		<div class="light-two" style="background: <%= christmascard.lighttwo %>;"></div>
 		<div class="light-three" style="background: <%= christmascard.lightthree %>;"></div>
-		<div class="snow"></div>
+		<div class="snow" style="background: <%= christmascard.snow %>;"></div>
 	</div>
 </div>
 
 <%= form_for christmascard do |cc| %>
 	
-	<%= cc.text_field :tree, class: "form-control" %>
-	<%= cc.text_field :lightone, class: "form-control" %>
-	<%= cc.text_field :lighttwo, class: "form-control" %>
-	<%= cc.text_field :lightthree, class: "form-control" %>
-	<%= cc.text_field :snow, class: "form-control" %>
-	<%= cc.text_field :background, class: "form-control" %>
-	<%= cc.text_field :border, class: "form-control" %>
-	<%= cc.text_field :title, class: "form-control" %>
+	<%= cc.text_field :tree, placeholder: "Tree color", class: "form-control" %>
+	<%= cc.text_field :lightone, placeholder: "Light one color", class: "form-control" %>
+	<%= cc.text_field :lighttwo, placeholder: "Light two color", class: "form-control" %>
+	<%= cc.text_field :lightthree, placeholder: "Light three color", class: "form-control" %>
+	<%= cc.text_field :snow, placeholder: "Snow color", class: "form-control" %>
+	<%= cc.text_field :background, placeholder: "Background color", class: "form-control" %>
+	<%= cc.text_field :border, placeholder: "Border color", class: "form-control" %>
+	<%= cc.text_field :title, placeholder: "Message", class: "form-control" %>
 
 	<%= cc.submit "save" %>
 

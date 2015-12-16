@@ -2,9 +2,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>User page</h1>
-				<%= @user.id %>
-				<a class="new" data-method="put" href="/users/<%= @user.id %>/christmascard" rel="nofollow">Christmas card</a>
+				<h1>Hello, <%= @user.username %></h1>
+				<div class="row">
+					<div class="col-sm-6">
+						<a class="new" data-method="put" href="/users/<%= @user.id %>/christmascard" rel="nofollow">Add Christmas card</a>
+					</div>
+					<div class="col-sm-6">
+						<a class="new" data-method="put" href="/users/<%= @user.id %>/christmascard" rel="nofollow">Add Holiday card</a>
+					</div>
+				</div>
 				<% if @ccard != nil %>
 					<%= render @ccard %>
 				<% else %>

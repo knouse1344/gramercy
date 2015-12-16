@@ -9,5 +9,13 @@
 
 	User.create([
 		{username: "admin", password: "admin", password_confirmation: "admin"},
-		{username: "after3", password: "after3", password_confirmation: "after3"}
+		{username: "maya", password: "after3", password_confirmation: "after3"},
+		{username: "preston", password: "after3", password_confirmation: "after3"},
+		{username: "finn", password: "after3", password_confirmation: "after3"},
+		{username: "adrian", password: "after3", password_confirmation: "after3"},
+		{username: "jaden", password: "after3", password_confirmation: "after3"},
+		{username: "vivian", password: "after3", password_confirmation: "after3"},
+		{username: "maggie", password: "after3", password_confirmation: "after3"},
+		{username: "zoey", password: "after3", password_confirmation: "after3"},
+		{username: "bella", password: "after3", password_confirmation: "after3"}
 ])

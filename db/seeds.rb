@@ -8,7 +8,7 @@
 
 
 	User.create([
-		{username: "admin", password: "admin", password_confirmation: "admin"},
+		{username: "bryan", password: "after3", password_confirmation: "after3"},
 		{username: "maya", password: "after3", password_confirmation: "after3"},
 		{username: "preston", password: "after3", password_confirmation: "after3"},
 		{username: "finn", password: "after3", password_confirmation: "after3"},

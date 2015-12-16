@@ -52,7 +52,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "It's a pleasure to meet you!"
-      redirect_to "/main/index"
+      redirect_to @user
     else
       render 'new'
     end

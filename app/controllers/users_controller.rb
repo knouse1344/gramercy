@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:edit, :new, :index, :update, :show, :destroy]
+  before_action :signed_in_user, only: [:edit, :new, :index, :update, :destroy]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -32,10 +32,14 @@ class UsersController < ApplicationController
     @newchristmas.lightone = "white"
     @newchristmas.lighttwo = "white"
     @newchristmas.lightthree = "white"
+    @newchristmas.flakeone = "white"
+    @newchristmas.flaketwo = "white"
+    @newchristmas.flakethree = "white"
     @newchristmas.snow = "white"
     @newchristmas.background = "steelblue"
     @newchristmas.border = "grey"
     @newchristmas.title = "Merry Christmas!"
+    @newchristmas.titlecolor = "white"
     @newchristmas.save
     redirect_to @user, notice: "Thanks!"
   end

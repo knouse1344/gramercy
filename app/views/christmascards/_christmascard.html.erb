@@ -1,35 +1,217 @@
 <div id="christmas">
-	<div class="container">
-		<div class="row">
-			<a href="/">Back</a><br>
-			<a href="/signin">Log In</a>
-		</div>
-	</div>
 	<div class="card christmas">
-		<h2><%= christmascard.title %></h2>
+		<h2 style="color: <%= christmascard.titlecolor %>"><%= christmascard.title %></h2>
 		<div class="stump"></div>
 		<div class="tree" style="border-bottom: 400px solid <%= christmascard.tree %>;"></div>
 		<div class="light-one" style="background: <%= christmascard.lightone %>;"></div>
 		<div class="light-two" style="background: <%= christmascard.lighttwo %>;"></div>
 		<div class="light-three" style="background: <%= christmascard.lightthree %>;"></div>
+		<div class="flake-one" style="background: <%= christmascard.flakeone %>;"></div>
+		<div class="flake-two" style="background: <%= christmascard.flaketwo %>;"></div>
+		<div class="flake-three" style="background: <%= christmascard.flakethree %>;"></div>
 		<div class="snow" style="background: <%= christmascard.snow %>;"></div>
 	</div>
 </div>
 
-<%= form_for christmascard do |cc| %>
-	
-	<%= cc.text_field :tree, placeholder: "Tree color", class: "form-control" %>
-	<%= cc.text_field :lightone, placeholder: "Light one color", class: "form-control" %>
-	<%= cc.text_field :lighttwo, placeholder: "Light two color", class: "form-control" %>
-	<%= cc.text_field :lightthree, placeholder: "Light three color", class: "form-control" %>
-	<%= cc.text_field :snow, placeholder: "Snow color", class: "form-control" %>
-	<%= cc.text_field :background, placeholder: "Background color", class: "form-control" %>
-	<%= cc.text_field :border, placeholder: "Border color", class: "form-control" %>
-	<%= cc.text_field :title, placeholder: "Message", class: "form-control" %>
+<% if signed_in? %>
 
-	<%= cc.submit "save" %>
+<div class="color-swatch">
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: aliceblue;">Aliceblue</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: aqua;">Aqua</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: black; color: #fff;">Black</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: blue; color: #fff;">Blue</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: blueviolet; color: #fff;">Blueviolet</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: brown; color: #fff;">Brown</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: burlywood;">Burlywood</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: cadetblue;">Cadetblue</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: chartreuse;">Chartreuse</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: chocolate;">Chocolate</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: coral;">Coral</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: cornflowerblue;">Cornflowerblue</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: crimson;">Crimson</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: cyan;">Cyan</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: darkblue; color: #fff;">Darkblue</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: darkgreen; color: #fff;">Darkgreen</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: darkmagenta; color: #fff;">Darkmagenta</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: darkorange;">Darkorange</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: deeppink;">Deeppink</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: forestgreen;">Forestgreen</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: gold;">Gold</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: grey;">Gray</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: green;">Green</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: hotpink;">Hotpink</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: lightsalmon;">Lightsalmon</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: lime;">Lime</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: olive;">Olive</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: orange;">Orange</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: peru;">Peru</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: pink;">Pink</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: plum;">Plum</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: red;">Red</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="color" style="background: silver;">Silver</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: skyblue;">Skyblue</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: teal;">Teal</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="color" style="background: yellow;">Yellow</div>
+		</div>
+	</div>
+</div>
 
-<% end %>
+<div class="christmas-form">
+	<%= form_for christmascard do |cc| %>
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<%= cc.label "Tree color" %>
+				<%= cc.text_field :tree, placeholder: "Tree color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Light one color" %>
+				<%= cc.text_field :lightone, placeholder: "Light one color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Light two color" %>
+				<%= cc.text_field :lighttwo, placeholder: "Light two color", class: "form-control" %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= cc.label "Light three color" %>
+				<%= cc.text_field :lightthree, placeholder: "Light three color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Snow color" %>
+				<%= cc.text_field :snow, placeholder: "Snow color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Background color" %>	
+				<%= cc.text_field :background, placeholder: "Background color", class: "form-control" %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= cc.label "Snow flake one color" %>
+				<%= cc.text_field :flakeone, placeholder: "Light three color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Snow flake two color" %>
+				<%= cc.text_field :flaketwo, placeholder: "Light three color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Snow flake three color" %>
+				<%= cc.text_field :flakethree, placeholder: "Light three color", class: "form-control" %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= cc.label "Border color" %>
+				<%= cc.text_field :border, placeholder: "Border color", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Title Message" %>
+				<%= cc.text_field :title, placeholder: "Message", class: "form-control" %>
+			</div>
+			<div class="col-sm-4">
+				<%= cc.label "Title Message Color" %>
+				<%= cc.text_field :titlecolor, placeholder: "Message", class: "form-control" %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<%= cc.submit "Save Card", class: "submit-btn" %>
+			</div>
+		</div>
+
+	<% end %>
+
+</div>
 
 <div class="container">
 	<div class="row">
@@ -42,6 +224,9 @@
 	<div class="light-one" style="background: <%= christmascard.lightone %>;"></div>
 	<div class="light-two" style="background: <%= christmascard.lighttwo %>;"></div>
 	<div class="light-three" style="background: <%= christmascard.lightthree %>;"></div>
+	<div class="flake-one" style="background: <%= christmascard.flakeone %>;"></div>
+	<div class="flake-two" style="background: <%= christmascard.flaketwo %>;"></div>
+	<div class="flake-three" style="background: <%= christmascard.flakethree %>;"></div>
 	<div class="snow"></div>
 </div>
 		</xmp>
@@ -63,7 +248,7 @@
 	height: 0;
 	border-left: 150px solid transparent;
 	border-right: 150px solid transparent;
-	border-bottom: 400px solid green;
+	border-bottom: 400px solid <%= christmascard.tree %>;
 }
 
 .light-one {
@@ -72,7 +257,7 @@
     top: 210px;
  	width: 25px;
  	height: 25px;
- 	background: white;
+ 	background: <%= christmascard.lightone %>;
  	border-radius: 13px;
 }
 .light-two {
@@ -81,7 +266,7 @@
     top: 320px;
  	width: 25px;
  	height: 25px;
- 	background: white;
+ 	background: <%= christmascard.lightone %>;
  	border-radius: 13px;
 }
 .light-three {
@@ -90,7 +275,7 @@
     top: 420px;
  	width: 25px;
  	height: 25px;
- 	background: white;
+ 	background: <%= christmascard.lightone %>;
  	border-radius: 13px;
 }
 
@@ -109,8 +294,11 @@
 	bottom: 0;
 	height: 75px;
 	width: 100%;
-	background: white;
+	background: <%= christmascard.snow %>;
 }
 		</xmp>
 	</div>
 </div>
+
+
+<% end %>

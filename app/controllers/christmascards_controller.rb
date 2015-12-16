@@ -72,6 +72,6 @@ class ChristmascardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def christmascard_params
-      params.require(:christmascard).permit(:tree, :lightone, :lighttwo, :lightthree, :snow, :background, :border, :title, :user_id)
+      params.require(:christmascard).permit(:tree, :lightone, :lighttwo, :lightthree, :flakeone, :flaketwo, :flakethree, :snow, :background, :border, :title, :titlecolor, :user_id)
     end
 end

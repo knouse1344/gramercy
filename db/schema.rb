@@ -21,10 +21,14 @@ ActiveRecord::Schema.define(version: 20151216074311) do
     t.string   "lightone"
     t.string   "lighttwo"
     t.string   "lightthree"
+    t.string   "flakeone"
+    t.string   "flaketwo"
+    t.string   "flakethree"
     t.string   "snow"
     t.string   "background"
     t.string   "border"
     t.string   "title"
+    t.string   "titlecolor"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

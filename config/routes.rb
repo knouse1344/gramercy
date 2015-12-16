@@ -22,7 +22,16 @@ Rails.application.routes.draw do
   match '/dashboard', to: 'main#dashboard', via: 'get'
 
 
-  match '/bryan', to: 'main#bryan', via: 'get'
+  match '/bryan' => 'users#show', :defaults => { :id => '1' }, via: 'get'
+  match '/maya' => 'users#show', :defaults => { :id => '2' }, via: 'get'
+  match '/preston' => 'users#show', :defaults => { :id => '3' }, via: 'get'
+  match '/finn' => 'users#show', :defaults => { :id => '4' }, via: 'get'
+  match '/adrian' => 'users#show', :defaults => { :id => '5' }, via: 'get'
+  match '/jaden' => 'users#show', :defaults => { :id => '6' }, via: 'get'
+  match '/vivian' => 'users#show', :defaults => { :id => '7' }, via: 'get'
+  match '/maggie' => 'users#show', :defaults => { :id => '8' }, via: 'get'
+  match '/zoey' => 'users#show', :defaults => { :id => '9' }, via: 'get'
+  match '/bella' => 'users#show', :defaults => { :id => '10' }, via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

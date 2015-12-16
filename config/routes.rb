@@ -1,16 +1,41 @@
 Rails.application.routes.draw do
 
+  get 'users/index'
   get 'main/index'
+
+  get 'main/bryan'
 
   match '/christmas', to: 'main#christmas', via: 'get'
   match '/holiday', to: 'main#holiday', via: 'get'
   match '/hanukkah', to: 'main#hanukkah', via: 'get'
+
+  resources :christmascards
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get "sessions/new"
+  get "sessions/destroy"
+  get 'sessions/new'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+  match '/signup', to: 'users#new', via: 'get'
+  match '/dashboard', to: 'main#dashboard', via: 'get'
+
+
+  match '/bryan', to: 'main#bryan', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'main#index'
+
+
+  resources :users do
+    member do
+      put :christmascard
+    end
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

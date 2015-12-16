@@ -3,6 +3,10 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<h1>Welcome to the holiday card project!</h1><br><br>
+				<a href="/signin">Log In</a>
+				<% if signed_in? %>
+					<%= link_to "Log out", signout_path, method: "delete", class: 'login' %>
+				<% end %>
 
 				<a href="/holiday">Holiday Card</a>
 				<div class="card holidays">

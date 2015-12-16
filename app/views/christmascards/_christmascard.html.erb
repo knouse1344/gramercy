@@ -1,0 +1,116 @@
+<div id="christmas">
+	<div class="container">
+		<div class="row">
+			<a href="/">Back</a><br>
+			<a href="/signin">Log In</a>
+		</div>
+	</div>
+	<div class="card christmas">
+		<h2>Merry Christmas!</h2>
+		<div class="stump"></div>
+		<div class="tree" style="border-bottom: 400px solid <%= christmascard.tree %>;"></div>
+		<div class="light-one" style="background: <%= christmascard.lightone %>;"></div>
+		<div class="light-two" style="background: <%= christmascard.lighttwo %>;"></div>
+		<div class="light-three" style="background: <%= christmascard.lightthree %>;"></div>
+		<div class="snow"></div>
+	</div>
+</div>
+
+<%= form_for christmascard do |cc| %>
+	
+	<%= cc.text_field :tree, class: "form-control" %>
+	<%= cc.text_field :lightone, class: "form-control" %>
+	<%= cc.text_field :lighttwo, class: "form-control" %>
+	<%= cc.text_field :lightthree, class: "form-control" %>
+	<%= cc.text_field :snow, class: "form-control" %>
+	<%= cc.text_field :background, class: "form-control" %>
+	<%= cc.text_field :border, class: "form-control" %>
+	<%= cc.text_field :title, class: "form-control" %>
+
+	<%= cc.submit "save" %>
+
+<% end %>
+
+<div class="container">
+	<div class="row">
+		<h2>HTML Code</h2>
+		<xmp>
+<div class="card christmas">
+	<h2>Merry Christmas!</h2>
+	<div class="stump"></div>
+	<div class="tree" style="background: <%= christmascard.tree %>;"></div>
+	<div class="light-one" style="background: <%= christmascard.lightone %>;"></div>
+	<div class="light-two" style="background: <%= christmascard.lighttwo %>;"></div>
+	<div class="light-three" style="background: <%= christmascard.lightthree %>;"></div>
+	<div class="snow"></div>
+</div>
+		</xmp>
+
+		<br><br><br>
+		<h2>CSS Code</h2>
+		<xmp>
+.christmas h2 {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.tree {
+	position: absolute;
+	top: 80px;
+	left: 125px;
+	width: 0; 
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 400px solid green;
+}
+
+.light-one {
+ 	position: absolute;
+    left: 240px;
+    top: 210px;
+ 	width: 25px;
+ 	height: 25px;
+ 	background: white;
+ 	border-radius: 13px;
+}
+.light-two {
+ 	position: absolute;
+    left: 300px;
+    top: 320px;
+ 	width: 25px;
+ 	height: 25px;
+ 	background: white;
+ 	border-radius: 13px;
+}
+.light-three {
+ 	position: absolute;
+    left: 240px;
+    top: 420px;
+ 	width: 25px;
+ 	height: 25px;
+ 	background: white;
+ 	border-radius: 13px;
+}
+
+.stump {
+	background: saddlebrown;
+	width: 75px;
+	height: 100px;
+	position: absolute;
+	left: 230px;
+	bottom: 50px;
+}
+
+.snow {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 75px;
+	width: 100%;
+	background: white;
+}
+		</xmp>
+	</div>
+</div>

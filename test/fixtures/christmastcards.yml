@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tree: MyString
+  lightone: MyString
+  lighttwo: MyString
+  lightthree: MyString
+  snow: MyString
+  background: MyString
+  border: MyString
+  title: MyString
+
+two:
+  tree: MyString
+  lightone: MyString
+  lighttwo: MyString
+  lightthree: MyString
+  snow: MyString
+  background: MyString
+  border: MyString
+  title: MyString

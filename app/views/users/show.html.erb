@@ -1,0 +1,16 @@
+<div id="user">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>User page</h1>
+				<%= @user.id %>
+				<a class="new" data-method="put" href="/users/<%= @user.id %>/christmascard" rel="nofollow">Christmas card</a>
+				<% if @ccard != nil %>
+					<%= render @ccard %>
+				<% else %>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

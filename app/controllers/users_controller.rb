@@ -49,8 +49,11 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @newsite = Website.new
     @newsite.user_id = @user.id
-    @newsite.heading = "Lorem ipsum"
-    @newsite.footer = "lorem ipsum"
+    @newsite.heading = "Heading"
+    @newsite.description = "Description"
+    @newsite.image = ""
+    @newsite.profile = ""
+    @newsite.footer = "Footer"
     @newsite.save
     redirect_to "/"
   end

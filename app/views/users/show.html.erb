@@ -60,9 +60,23 @@
 					
 				</div>
 			<% else %>
+				<div class="row site-content">
+					<div class="col-sm-10 col-sm-offset-1 site-content">
+						<h1><%= @site.heading.html_safe %></h1>
 
+						<h2>Description</h2>
+						<p><%= @site.description.html_safe %></p>
 
+						<h2>Profile Picture</h2>
+						<p><img src="<%= @site.profile %>" /></p>
 
+						<h2>Web Image</h2>
+						<p><%= @site.image.html_safe %></p>
+
+						<h2>Footer</h2>
+						<p><%= @site.footer.html_safe %></p>
+					</div>
+				</div>
 			<% end %>
 		</div>
 	</div>

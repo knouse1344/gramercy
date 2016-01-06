@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @ccard = @user.christmascards.first
+    @site = @user.websites.first
   end
 
   # GET /users/new
@@ -44,17 +45,29 @@ class UsersController < ApplicationController
     redirect_to @user, notice: "Thanks!"
   end
 
+  def newsite
+    @user = User.find(params[:id])
+    @newsite = Website.new
+    @newsite.user_id = @user.id
+    @newsite.heading = "Lorem ipsum"
+    @newsite.footer = "lorem ipsum"
+    @newsite.save
+    redirect_to "/"
+  end
+
   # POST /users
   # POST /users.json
   def create
     @user = User.new(user_params)
 
-    if @user.save
-      sign_in @user
-      flash[:success] = "It's a pleasure to meet you!"
-      redirect_to @user
-    else
-      render 'new'
+    respond_to do |format|
+      if @user.save
+        sign_in @user
+        flash[:success] = "It's a pleasure to meet you!"
+        redirect_to @user
+      else
+        render 'new'
+      end
     end
   end
 

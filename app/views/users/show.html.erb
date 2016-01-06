@@ -4,21 +4,66 @@
 			<div class="col-sm-12">
 				<% if signed_in? %>
 					<h1>Hello, <%= @user.username.capitalize %>!</h1>
-					<div class="row">
-						<div class="col-sm-6">
-							<a class="new" data-method="put" href="/users/<%= @user.id %>/christmascard" rel="nofollow">Add Christmas card</a>
-						</div>
-						<div class="col-sm-6">
-							<a class="new" data-method="put" href="/users/<%= @user.id %>/christmascard" rel="nofollow">Add Holiday card</a>
-						</div>
-					</div>
-				<% end %>
-				<% if @ccard != nil %>
-					<%= render @ccard %>
+					<p>You may edit your website below</p>
 				<% else %>
 
 				<% end %>
 			</div>
+		</div>
+
+		<div class="row site-demo">
+			<% if signed_in? %>
+				<div class="col-sm-6 site-form">
+					<%= form_for @site do |site| %>
+
+						<div class="button-container">
+							<%= site.submit "Click Here to Save Website", class: "save" %>
+						</div>
+
+						<%= site.label :heading %>
+						<p class="desc">Use an HTML heading tag.  Example:
+<xmp><h1> example </h1></xmp></p>
+						<%= site.text_field :heading, class: "form-control" %>
+					
+						<%= site.label :profile %>
+						<%= site.file_field :profile, :onchange =>"validateFiles(this);", class: "form-control" %>
+						
+						<%= site.label :image %>
+						<%= site.text_field :image, class: "form-control" %>
+
+						<%= site.label :description %>
+						<p class="desc">Use an HTML paragraph tag.  Example:
+<xmp><p> example </p></xmp></p>
+						<%= site.text_area :description, class: "form-control" %>
+
+						<%= site.label :footer %>
+						<p class="desc">Use an HTML span tag.  Example:
+<xmp><footer> example </footer></xmp></p>
+						<%= site.text_field :footer, class: "form-control" %>
+					
+					<% end %>
+				</div>
+				<div class="col-sm-6 site-content">
+					<h1><%= @site.heading.html_safe %></h1>
+
+					<h2>Description</h2>
+					<p><%= @site.description.html_safe %></p>
+
+					<h2>Profile Picture</h2>
+					<p><img src="<%= @site.profile %>" /></p>
+
+					<h2>Web Image</h2>
+					<p><%= @site.image.html_safe %></p>
+
+					<h2>Footer</h2>
+					<p><%= @site.footer.html_safe %></p>
+					
+				</div>
+			<% else %>
+
+
+
+			<% end %>
 		</div>
 	</div>
 </div>

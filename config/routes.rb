@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'users/index'
   get 'main/index'
-
   get 'main/bryan'
 
   match '/christmas', to: 'main#christmas', via: 'get'
@@ -11,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :christmascards
   resources :users
+  resources :websites
   resources :sessions, only: [:new, :create, :destroy]
 
   get "sessions/new"
@@ -42,7 +41,7 @@ Rails.application.routes.draw do
 
   resources :users do
     member do
-      put :christmascard
+      put :christmascard, :newsite
     end
   end
 

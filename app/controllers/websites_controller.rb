@@ -11,6 +11,31 @@ class WebsitesController < ApplicationController
   def show
   end
 
+  def colorfont
+    @user = current_user
+    @site = Website.find(params[:id])
+    @color = params[:fontcolor]
+    @site.fontcolor = @color
+    @site.save
+    redirect_to @user, notice: "Thanks!"
+  end
+  def colorback
+    @user = current_user
+    @site = Website.find(params[:id])
+    @color = params[:backcolor]
+    @site.backcolor = @color
+    @site.save
+    redirect_to @user, notice: "Thanks!"
+  end
+  def colorfoot
+    @user = current_user
+    @site = Website.find(params[:id])
+    @color = params[:footcolor]
+    @site.footcolor = @color
+    @site.save
+    redirect_to @user, notice: "Thanks!"
+  end
+
   # GET /websites/new
   def new
     @website = Website.new
@@ -68,6 +93,6 @@ class WebsitesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def website_params
-      params.require(:website).permit(:heading, :profile, :image, :description, :footer, :user_id)
+      params.require(:website).permit(:fontcolor, :footcolor, :backcolor, :heading, :profile, :image, :description, :footer, :user_id)
     end
 end

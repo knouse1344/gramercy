@@ -44,6 +44,11 @@ Rails.application.routes.draw do
       put :christmascard, :newsite
     end
   end
+  resources :websites do
+    member do
+      put :colorfont, :colorback, :colorfoot
+    end
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

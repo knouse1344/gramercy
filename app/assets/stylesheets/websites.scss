@@ -16,6 +16,87 @@
 		margin-top: 3em;
 	}
 
+	h4 {
+		margin-top: 3em;
+		margin-bottom: 1em;
+	}
+
+	.color-buttons {
+
+
+		.color-btn {
+			display: inline-block;
+			padding: .5em 1.5em;
+			text-align: center;
+			color: #fff;
+			margin-bottom: .5em;
+		}
+
+		.red {
+			background: red;
+		}
+		.white {
+			background: white;
+			color: #333;
+		}
+		.blue {
+			background: blue;
+		}
+		.bisque {
+			background: bisque;
+			color: #333;
+		}
+		.brown {
+			background: brown;
+		}
+		.chocolate {
+			background: chocolate;
+		}
+		.cornflowerblue {
+			background: cornflowerblue;
+		}
+		.cyan {
+			background: cyan;
+			color: #333;
+		}
+		.darkblue {
+			background: darkblue;
+		}
+		.darkgray {
+			background: darkgray;
+		}
+		.gold {
+			background: gold;
+			color: #333;
+		}
+		.greenyellow {
+			background: greenyellow;
+			color: #333;
+		}
+		.hotpink {
+			background: hotpink;
+		}
+		.indigo {
+			background: indigo;
+		}
+		.khaki {
+			background: khaki;
+			color: #333;
+		}
+		.lightblue {
+			background: lightblue;
+		}
+		.lightgreen {
+			background: lightgreen;
+			color: #333;
+		}
+		.lightskyblue {
+			background: lightskyblue;
+			color: #333;
+		}
+
+	}
+
 	.site-form {
 		padding-right: 8em;
 		padding-bottom: 15em;
@@ -32,8 +113,8 @@
 			
 			.save {
 				background: #89c149;
-				padding: .5em 1.5em;
-				font-size: 1.25em;
+				padding: .5em 1.25em;
+				font-size: 1em;
 				text-transform: uppercase;
 				font-family: 'Roboto', sans-serif;
 				color: #fff;

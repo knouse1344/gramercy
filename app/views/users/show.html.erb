@@ -14,32 +14,108 @@
 		<div class="row site-demo">
 			<% if signed_in? %>
 				<div class="col-sm-6 site-form">
-					<%= form_for @site do |site| %>
+					<h4>Select your font color </h4>
+					<div class="color-buttons">
+						<%= link_to "red Font", colorfont_website_path(@site, :fontcolor => 'red'), method: "put", class: "color-btn red" %>
+						<%= link_to "blue Font", colorfont_website_path(@site, :fontcolor => 'blue'), method: "put", class: "color-btn blue" %>
+						<%= link_to "white Font", colorfont_website_path(@site, :fontcolor => 'white'), method: "put", class: "color-btn white" %>
+						<%= link_to "bisque Font", colorfont_website_path(@site, :fontcolor => 'bisque'), method: "put", class: "color-btn bisque" %>
+						<%= link_to "brown Font", colorfont_website_path(@site, :fontcolor => 'brown'), method: "put", class: "color-btn brown" %>
+						<%= link_to "chocolate Font", colorfont_website_path(@site, :fontcolor => 'chocolate'), method: "put", class: "color-btn chocolate" %>
+						<%= link_to "cornflowerblue Font", colorfont_website_path(@site, :fontcolor => 'cornflowerblue'), method: "put", class: "color-btn cornflowerblue" %>
+						<%= link_to "cyan Font", colorfont_website_path(@site, :fontcolor => 'cyan'), method: "put", class: "color-btn cyan" %>
+						<%= link_to "darkblue Font", colorfont_website_path(@site, :fontcolor => 'darkblue'), method: "put", class: "color-btn darkblue" %>
+						<%= link_to "darkgray Font", colorfont_website_path(@site, :fontcolor => 'darkgray'), method: "put", class: "color-btn darkgray" %>
+						<%= link_to "gold Font", colorfont_website_path(@site, :fontcolor => 'gold'), method: "put", class: "color-btn gold" %>
+						<%= link_to "greenyellow Font", colorfont_website_path(@site, :fontcolor => 'greenyellow'), method: "put", class: "color-btn greenyellow" %>
+						<%= link_to "hotpink Font", colorfont_website_path(@site, :fontcolor => 'hotpink'), method: "put", class: "color-btn hotpink" %>
+						<%= link_to "indigo Font", colorfont_website_path(@site, :fontcolor => 'indigo'), method: "put", class: "color-btn indigo" %>
+						<%= link_to "khaki Font", colorfont_website_path(@site, :fontcolor => 'khaki'), method: "put", class: "color-btn khaki" %>
+						<%= link_to "lightblue Font", colorfont_website_path(@site, :fontcolor => 'lightblue'), method: "put", class: "color-btn lightblue" %>
+						<%= link_to "lightgreen Font", colorfont_website_path(@site, :fontcolor => 'lightgreen'), method: "put", class: "color-btn lightgreen" %>
+						<%= link_to "lightskyblue Font", colorfont_website_path(@site, :fontcolor => 'lightskyblue'), method: "put", class: "color-btn lightskyblue" %>
+					</div>
+					<h4>Select your website background color </h4>
+					<div class="color-buttons">
+						<%= link_to "red Background", colorback_website_path(@site, :backcolor => 'red'), method: "put", class: "color-btn red" %>
+						<%= link_to "blue Background", colorback_website_path(@site, :backcolor => 'blue'), method: "put", class: "color-btn blue" %>
+						<%= link_to "white Background", colorback_website_path(@site, :backcolor => 'white'), method: "put", class: "color-btn white" %>
+						<%= link_to "bisque Background", colorback_website_path(@site, :backcolor => 'bisque'), method: "put", class: "color-btn bisque" %>
+						<%= link_to "brown Background", colorback_website_path(@site, :backcolor => 'brown'), method: "put", class: "color-btn brown" %>
+						<%= link_to "chocolate Background", colorback_website_path(@site, :backcolor => 'chocolate'), method: "put", class: "color-btn chocolate" %>
+						<%= link_to "cornflowerblue Background", colorback_website_path(@site, :backcolor => 'cornflowerblue'), method: "put", class: "color-btn cornflowerblue" %>
+						<%= link_to "cyan Background", colorback_website_path(@site, :backcolor => 'cyan'), method: "put", class: "color-btn cyan" %>
+						<%= link_to "darkblue Background", colorback_website_path(@site, :backcolor => 'darkblue'), method: "put", class: "color-btn darkblue" %>
+						<%= link_to "darkgray Background", colorback_website_path(@site, :backcolor => 'darkgray'), method: "put", class: "color-btn darkgray" %>
+						<%= link_to "gold Background", colorback_website_path(@site, :backcolor => 'gold'), method: "put", class: "color-btn gold" %>
+						<%= link_to "greenyellow Background", colorback_website_path(@site, :backcolor => 'greenyellow'), method: "put", class: "color-btn greenyellow" %>
+						<%= link_to "hotpink Background", colorback_website_path(@site, :backcolor => 'hotpink'), method: "put", class: "color-btn hotpink" %>
+						<%= link_to "indigo Background", colorback_website_path(@site, :backcolor => 'indigo'), method: "put", class: "color-btn indigo" %>
+						<%= link_to "khaki Background", colorback_website_path(@site, :backcolor => 'khaki'), method: "put", class: "color-btn khaki" %>
+						<%= link_to "lightblue Background", colorback_website_path(@site, :backcolor => 'lightblue'), method: "put", class: "color-btn lightblue" %>
+						<%= link_to "lightgreen Background", colorback_website_path(@site, :backcolor => 'lightgreen'), method: "put", class: "color-btn lightgreen" %>
+						<%= link_to "lightskyblue Background", colorback_website_path(@site, :backcolor => 'lightskyblue'), method: "put", class: "color-btn lightskyblue" %>
+					</div>
+					<h4>Select your website Footer color </h4>
+					<div class="color-buttons">
+						<%= link_to "red Footer", colorfoot_website_path(@site, :footcolor => 'red'), method: "put", class: "color-btn red" %>
+						<%= link_to "blue Footer", colorfoot_website_path(@site, :footcolor => 'blue'), method: "put", class: "color-btn blue" %>
+						<%= link_to "white Footer", colorfoot_website_path(@site, :footcolor => 'white'), method: "put", class: "color-btn white" %>
+						<%= link_to "bisque Footer", colorfoot_website_path(@site, :footcolor => 'bisque'), method: "put", class: "color-btn bisque" %>
+						<%= link_to "brown Footer", colorfoot_website_path(@site, :footcolor => 'brown'), method: "put", class: "color-btn brown" %>
+						<%= link_to "chocolate Footer", colorfoot_website_path(@site, :footcolor => 'chocolate'), method: "put", class: "color-btn chocolate" %>
+						<%= link_to "cornflowerblue Footer", colorfoot_website_path(@site, :footcolor => 'cornflowerblue'), method: "put", class: "color-btn cornflowerblue" %>
+						<%= link_to "cyan Footer", colorfoot_website_path(@site, :footcolor => 'cyan'), method: "put", class: "color-btn cyan" %>
+						<%= link_to "darkblue Footer", colorfoot_website_path(@site, :footcolor => 'darkblue'), method: "put", class: "color-btn darkblue" %>
+						<%= link_to "darkgray Footer", colorfoot_website_path(@site, :footcolor => 'darkgray'), method: "put", class: "color-btn darkgray" %>
+						<%= link_to "gold Footer", colorfoot_website_path(@site, :footcolor => 'gold'), method: "put", class: "color-btn gold" %>
+						<%= link_to "greenyellow Footer", colorfoot_website_path(@site, :footcolor => 'greenyellow'), method: "put", class: "color-btn greenyellow" %>
+						<%= link_to "hotpink Footer", colorfoot_website_path(@site, :footcolor => 'hotpink'), method: "put", class: "color-btn hotpink" %>
+						<%= link_to "indigo Footer", colorfoot_website_path(@site, :footcolor => 'indigo'), method: "put", class: "color-btn indigo" %>
+						<%= link_to "khaki Footer", colorfoot_website_path(@site, :footcolor => 'khaki'), method: "put", class: "color-btn khaki" %>
+						<%= link_to "lightblue Footer", colorfoot_website_path(@site, :footcolor => 'lightblue'), method: "put", class: "color-btn lightblue" %>
+						<%= link_to "lightgreen Footer", colorfoot_website_path(@site, :footcolor => 'lightgreen'), method: "put", class: "color-btn lightgreen" %>
+						<%= link_to "lightskyblue Footer", colorfoot_website_path(@site, :footcolor => 'lightskyblue'), method: "put", class: "color-btn lightskyblue" %>
+					</div>
 
-						<div class="button-container">
-							<%= site.submit "Click Here to Save Website", class: "save" %>
-						</div>
+
+					<%= form_for @site do |site| %>
 
 						<%= site.label :heading %>
 						<p class="desc">Use an HTML heading tag.  Example:
 <xmp><h1> example </h1></xmp></p>
 						<%= site.text_field :heading, class: "form-control" %>
+						<div class="button-container">
+							<%= site.submit "Save Website", class: "save" %>
+						</div>
 					
 						<%= site.label :profile %>
 						<%= site.file_field :profile, :onchange =>"validateFiles(this);", class: "form-control" %>
+						<div class="button-container">
+							<%= site.submit "Save Website", class: "save" %>
+						</div>
 						
 						<%= site.label :image %>
 						<%= site.text_field :image, class: "form-control" %>
+						<div class="button-container">
+							<%= site.submit "Save Website", class: "save" %>
+						</div>
 
 						<%= site.label :description %>
 						<p class="desc">Use an HTML paragraph tag.  Example:
 <xmp><p> example </p></xmp></p>
 						<%= site.text_area :description, class: "form-control" %>
+						<div class="button-container">
+							<%= site.submit "Save Website", class: "save" %>
+						</div>
 
 						<%= site.label :footer %>
 						<p class="desc">Use an HTML span tag.  Example:
 <xmp><footer> example </footer></xmp></p>
 						<%= site.text_field :footer, class: "form-control" %>
+						<div class="button-container">
+							<%= site.submit "Save Website", class: "save" %>
+						</div>
 					
 					<% end %>
 				</div>
@@ -55,8 +131,10 @@
 					<h2>Web Image</h2>
 					<p><%= @site.image.html_safe %></p>
 
-					<h2>Footer</h2>
-					<p><%= @site.footer.html_safe %></p>
+					<div class="footer">
+						<h2>Footer</h2>
+						<p><%= @site.footer.html_safe %></p>
+					</div>
 					
 				</div>
 			<% else %>
@@ -73,11 +151,28 @@
 						<h2>Web Image</h2>
 						<p><%= @site.image.html_safe %></p>
 
-						<h2>Footer</h2>
-						<p><%= @site.footer.html_safe %></p>
+						<div class="footer">
+							<h2>Footer</h2>
+							<p><%= @site.footer.html_safe %></p>
+						</div>
 					</div>
 				</div>
 			<% end %>
 		</div>
 	</div>
 </div>
+
+
+<style>
+
+	.site-content {
+		color: <%= @site.fontcolor %>;
+		background: <%= @site.backcolor %>;
+	}
+
+	.site-content .footer {
+		padding-top: 2em;
+		padding-bottom: 2em;
+		background: <%= @site.footcolor %>;
+	}
+</style>

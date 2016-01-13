@@ -383,26 +383,119 @@
   margin-top: 3em;
 }
 /* line 19, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo h4 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+/* line 27, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .color-btn {
+  display: inline-block;
+  padding: .5em 1.5em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: .5em;
+}
+/* line 35, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .red {
+  background: red;
+}
+/* line 38, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .white {
+  background: white;
+  color: #333;
+}
+/* line 42, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .blue {
+  background: blue;
+}
+/* line 45, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .bisque {
+  background: bisque;
+  color: #333;
+}
+/* line 49, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .brown {
+  background: brown;
+}
+/* line 52, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .chocolate {
+  background: chocolate;
+}
+/* line 55, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .cornflowerblue {
+  background: cornflowerblue;
+}
+/* line 58, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .cyan {
+  background: cyan;
+  color: #333;
+}
+/* line 62, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .darkblue {
+  background: darkblue;
+}
+/* line 65, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .darkgray {
+  background: darkgray;
+}
+/* line 68, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .gold {
+  background: gold;
+  color: #333;
+}
+/* line 72, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .greenyellow {
+  background: greenyellow;
+  color: #333;
+}
+/* line 76, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .hotpink {
+  background: hotpink;
+}
+/* line 79, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .indigo {
+  background: indigo;
+}
+/* line 82, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .khaki {
+  background: khaki;
+  color: #333;
+}
+/* line 86, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .lightblue {
+  background: lightblue;
+}
+/* line 89, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .lightgreen {
+  background: lightgreen;
+  color: #333;
+}
+/* line 93, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+.site-demo .color-buttons .lightskyblue {
+  background: lightskyblue;
+  color: #333;
+}
+/* line 100, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-form {
   padding-right: 8em;
   padding-bottom: 15em;
   border-right: 2px solid #ddd;
 }
-/* line 24, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+/* line 105, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-form label {
   margin-top: 3em;
   font-size: 1.15em;
 }
-/* line 29, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+/* line 110, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-form .button-container {
   display: block;
   margin-top: 2em;
 }
-/* line 33, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+/* line 114, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-form .button-container .save {
   background: #89c149;
-  padding: .5em 1.5em;
-  font-size: 1.25em;
+  padding: .5em 1.25em;
+  font-size: 1em;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -411,16 +504,16 @@
   box-shadow: 0 0 0;
   opacity: 1;
 }
-/* line 46, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+/* line 127, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-form .button-container .save:hover {
   opacity: .6;
 }
-/* line 52, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+/* line 133, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-content {
   padding-left: 4em;
   text-align: center;
 }
-/* line 56, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
+/* line 137, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/websites.scss */
 .site-demo .site-content img {
   max-width: 100%;
 }

@@ -13,8 +13,23 @@
   font-size: 1.25em;
   font-weight: 300;
 }
+/* line 25, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+#project .userlist .user {
+  display: inline-block;
+  background: #89c149;
+  color: #fff;
+  margin: 0 1em 1em 0;
+}
+/* line 31, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+#project .userlist .user a {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+  display: block;
+  padding: .75em 1em;
+}
 
-/* line 50, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 72, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .card {
   width: 800px;
   height: 600px;
@@ -24,33 +39,33 @@
   position: relative;
 }
 
-/* line 59, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 81, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .holidays {
   background: pink;
   border: 5px solid red;
 }
 
-/* line 63, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 85, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .christmas {
   background: lightsteelblue;
   border: 5px solid darkgreen;
 }
 
-/* line 67, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 89, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .hanukkah {
   background: lightsteelblue;
   border: 5px solid darkgreen;
 }
 
 /*  Holidays Card   */
-/* line 77, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 99, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .holidays h2 {
   position: absolute;
   top: 50px;
   right: 50px;
 }
 
-/* line 83, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 105, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .ornament-one {
   width: 250px;
   height: 250px;
@@ -61,7 +76,7 @@
   border-radius: 125px;
 }
 
-/* line 93, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 115, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .rope-one {
   width: 10px;
   height: 400px;
@@ -71,7 +86,7 @@
   left: 220px;
 }
 
-/* line 102, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 124, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .ornament-two {
   width: 150px;
   height: 150px;
@@ -82,7 +97,7 @@
   border-radius: 75px;
 }
 
-/* line 112, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 134, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .rope-two {
   width: 10px;
   height: 400px;
@@ -92,7 +107,7 @@
   left: 340px;
 }
 
-/* line 121, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 143, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .ornament-three {
   width: 200px;
   height: 200px;
@@ -103,7 +118,7 @@
   border-radius: 100px;
 }
 
-/* line 131, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 153, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .rope-three {
   width: 10px;
   height: 350px;
@@ -114,19 +129,19 @@
 }
 
 /*  TREE CARD  */
-/* line 146, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 168, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 #christmas {
   padding-top: 5em;
 }
 
-/* line 150, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 172, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .christmas h2 {
   position: absolute;
   top: 50px;
   right: 50px;
 }
 
-/* line 156, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 178, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .tree {
   position: absolute;
   top: 80px;
@@ -137,7 +152,7 @@
   border-right: 150px solid transparent;
 }
 
-/* line 166, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 188, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .light-one {
   position: absolute;
   left: 240px;
@@ -147,7 +162,7 @@
   border-radius: 13px;
 }
 
-/* line 174, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 196, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .light-two {
   position: absolute;
   left: 300px;
@@ -157,7 +172,7 @@
   border-radius: 13px;
 }
 
-/* line 182, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 204, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .light-three {
   position: absolute;
   left: 240px;
@@ -167,7 +182,7 @@
   border-radius: 13px;
 }
 
-/* line 191, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 213, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .flake-one {
   position: absolute;
   left: 400px;
@@ -177,7 +192,7 @@
   border-radius: 5px;
 }
 
-/* line 199, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 221, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .flake-two {
   position: absolute;
   left: 520px;
@@ -187,7 +202,7 @@
   border-radius: 5px;
 }
 
-/* line 207, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 229, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .flake-three {
   position: absolute;
   left: 660px;
@@ -197,7 +212,7 @@
   border-radius: 5px;
 }
 
-/* line 216, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 238, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .stump {
   background: saddlebrown;
   width: 75px;
@@ -207,7 +222,7 @@
   bottom: 50px;
 }
 
-/* line 225, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 247, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .snow {
   position: absolute;
   left: 0;
@@ -217,22 +232,22 @@
   background: white;
 }
 
-/* line 238, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 260, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .color-swatch .color {
   padding: .75em 1em;
   display: block;
   width: 100%;
 }
 
-/* line 246, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 268, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .christmas-form {
   padding: 6em 0;
 }
-/* line 249, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 271, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .christmas-form .form-control {
   margin-bottom: 1em;
 }
-/* line 253, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 275, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .christmas-form .submit-btn {
   background: rgba(150, 255, 150, 0.7);
   border: 2px solid #ccc;
@@ -243,13 +258,13 @@
   margin-top: 2em;
   color: #333;
 }
-/* line 264, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 286, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .christmas-form .submit-btn:hover {
   background: #64ff64;
 }
 
 /*  Hanukkah Card   */
-/* line 275, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 297, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .hanukkah h2 {
   position: absolute;
   top: 50px;
@@ -257,7 +272,7 @@
   width: 100%;
 }
 
-/* line 282, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 304, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .base {
   width: 565px;
   height: 50px;
@@ -267,7 +282,7 @@
   background: goldenrod;
 }
 
-/* line 291, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 313, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .stand {
   width: 80px;
   height: 100px;
@@ -277,7 +292,7 @@
   position: absolute;
 }
 
-/* line 300, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 322, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle {
   width: 40px;
   height: 300px;
@@ -287,42 +302,42 @@
   background: goldenrod;
 }
 
-/* line 309, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 331, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.one {
   left: 100px;
 }
 
-/* line 312, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 334, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.two {
   left: 175px;
 }
 
-/* line 315, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 337, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.three {
   left: 250px;
 }
 
-/* line 318, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 340, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.four {
   left: 325px;
 }
 
-/* line 321, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 343, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.five {
   left: 400px;
 }
 
-/* line 324, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 346, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.six {
   left: 475px;
 }
 
-/* line 327, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 349, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.seven {
   left: 550px;
 }
 
-/* line 330, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
+/* line 352, /Users/Bryan/Desktop/projects/gramercyproject/app/assets/stylesheets/main.scss */
 .candle.eight {
   left: 625px;
 }

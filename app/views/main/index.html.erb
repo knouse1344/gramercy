@@ -10,8 +10,9 @@
 		<div class="row userlist">
 			<div class="col-sm-8 col-sm-offset-2">
 				<% @users.each do |user| %>
-					<p><a href="/users/<%= user.id %>"><%= user.username %></a> <% if signed_in? && current_user.username == "bryan"%> &ensp; | &ensp; <a class="new" data-method="put" href="/users/<%= user.id %>/newsite" rel="nofollow">Add Website</a></p>
-					<p><%= user.websites.count %><% end %>
+					<div class="user">
+						<a href="/users/<%= user.id %>"><%= user.username %></a> <% if signed_in? && current_user.username == "bryan"%> &ensp; | &ensp; <a class="new" data-method="put" href="/users/<%= user.id %>/newsite" rel="nofollow">Add Website </a><%= user.websites.count %><% end %>
+					</div>
 				<% end %>
 			</div>
 		</div>

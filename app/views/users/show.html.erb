@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="row site-demo">
-			<% if signed_in? %>
+			<% if signed_in? && @user.username == current_user.username %>
 				<div class="col-sm-6 site-form">
 					<h4>Select your font color </h4>
 					<div class="color-buttons">
